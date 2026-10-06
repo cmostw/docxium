@@ -16,17 +16,3 @@ dependencies = ["python-docx>=1.2,<2"]
 python-source = "python"
 module-name = "docxium._core"
 exclude = ["**/*.pdb"]
-
-[tool.maturin.generate-ci.github]
-pytest = true
-trusted-publishing = true
-publishing-environment = "pypi"
-
-[tool.maturin.generate-ci.github.linux]
-targets = ["x86_64", "aarch64"]
-
-[tool.maturin.generate-ci.github.windows]
-targets = ["x64"]
-
-[tool.maturin.generate-ci.github.macos]
-targets = ["x86_64", "aarch64"]
