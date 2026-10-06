@@ -1,0 +1,11 @@
+The files under docs/python-docx/ and docs/_static/img/ are copied from the docs/ directory of
+https://github.com/python-openxml/python-docx (commit e45454602b53e8e572b179ccf1c91093ec9f4ed7),
+which is distributed under the MIT License (see LICENSE in this directory).
+
+Changes made to the copied files:
+- index.rst: the release number uses |docx-version| (the installed python-docx version) instead of
+  |version| (the docxium version).
+- user/comments.rst: "_block-item container_" (parsed as a hyperlink reference) is written as
+  "*block-item container*".
+- substitutions.inc is the rst_epilog string of the original docs/conf.py, stored as a file.
+- The original conf.py, Makefile, _themes/ and _templates/ are not included.
